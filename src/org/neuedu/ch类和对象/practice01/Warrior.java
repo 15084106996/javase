@@ -1,4 +1,5 @@
-package org.neuedu.ch.parctice01;
+package org.neuedu.ch类和对象.practice01;
+
 /**
  * 战士类
  */
@@ -8,6 +9,14 @@ public class Warrior {
     int hp;// 血量
     int dps;// 攻击力
     int defend;// 防御
+
+    public void levelUp(double money) {
+        int level = (int)(money / 1000);
+        this.level = this.level + level;
+        this.dps = this.dps + level * 8;
+        this.defend = this.defend + level * 3;
+        System.out.println(name+" 升级了，能力提升");
+    }
 
     /**
      * 攻击
@@ -36,13 +45,6 @@ public class Warrior {
                 System.out.println(name+" 对 "+w.getName()+" 造成了 "+damage+" 伤害,对方还有 "+w.getHp()+" 血量");
             }
         }
-    }
-    public void levelUP(double money) {
-        int level = (int)(money/1000);
-        this.level=this.level+level;
-        this.dps=this.dps+level*8;
-        this.defend=this.defend+level*3;
-        System.out.println(name+"升级了，能力提升");
     }
 
     public Warrior(String name) {
