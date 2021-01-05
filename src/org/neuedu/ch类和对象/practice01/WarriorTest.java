@@ -10,7 +10,7 @@ public class WarriorTest {
             double random = Math.random();// [0,1)
             if (random < 0.5) {
                 w1.attack(w2);
-            }else{
+            } else {
                 w2.attack(w1);
             }
             if (w1.getHp() == 0 || w2.getHp() == 0) {

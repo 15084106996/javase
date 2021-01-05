@@ -12,6 +12,6 @@ public class Student {
     }
 
     public void pk(Student s) {
-        System.out.println(name+"揍了"+s.getName());
+        System.out.println(name + "揍了" + s.getName());
     }
 }

@@ -6,7 +6,8 @@ public class Student {
     int age;
     boolean gender;
 
-    public Student() {}
+    public Student() {
+    }
 
     public Student(String name, int age, boolean gender) {
         this.name = name;

@@ -11,7 +11,7 @@ public class StudentTest {
         s1.gender = true;
         System.out.println(s1);
 
-        Student s2 = new Student("tom",12,true);
+        Student s2 = new Student("tom", 12, true);
         s2.name = "tom2";
         s2.setName("tom3");
 

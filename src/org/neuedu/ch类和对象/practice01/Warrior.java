@@ -11,24 +11,25 @@ public class Warrior {
     int defend;// 防御
 
     public void levelUp(double money) {
-        int level = (int)(money / 1000);
+        int level = (int) (money / 1000);
         this.level = this.level + level;
         this.dps = this.dps + level * 8;
         this.defend = this.defend + level * 3;
-        System.out.println(name+" 升级了，能力提升");
+        System.out.println(name + " 升级了，能力提升");
     }
 
     /**
      * 攻击
+     *
      * @param w 被攻击的对象
      */
     public void attack(Warrior w) {
         if (hp == 0) {
             System.out.println("您的角色已经阵亡，不能攻击");
-        }else{
+        } else {
             if (w.getHp() == 0) {
-                System.out.println(w.getName()+" 已经阵亡，不能再攻击他了");
-            }else{
+                System.out.println(w.getName() + " 已经阵亡，不能再攻击他了");
+            } else {
                 // 造成的伤害
                 int damage = dps - w.getDefend();
                 if (damage <= 0) {
@@ -38,11 +39,11 @@ public class Warrior {
                 int restHp = w.getHp() - damage;
                 if (restHp <= 0) {
                     w.setHp(0);
-                    System.out.println(w.getName()+" 已经阵亡");
+                    System.out.println(w.getName() + " 已经阵亡");
                     return;
                 }
                 w.setHp(restHp);
-                System.out.println(name+" 对 "+w.getName()+" 造成了 "+damage+" 伤害,对方还有 "+w.getHp()+" 血量");
+                System.out.println(name + " 对 " + w.getName() + " 造成了 " + damage + " 伤害,对方还有 " + w.getHp() + " 血量");
             }
         }
     }
