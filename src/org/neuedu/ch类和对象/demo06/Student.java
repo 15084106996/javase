@@ -1,8 +1,13 @@
 package org.neuedu.ch类和对象.demo06;
 
 public class Student {
-   String name;
-   int age;
+    String name;
+    int age;
+
+    public Student getStu() {
+        Student s = new Student("bob", 33);
+        return s;
+    }
 
     public Student(String name, int age) {
         this.name = name;
@@ -12,9 +17,6 @@ public class Student {
     public Student() {
     }
 
-    public Student getStu() {
-        return Student;
-    }
     public String getName() {
         return name;
     }
