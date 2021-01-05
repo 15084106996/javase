@@ -1,4 +1,4 @@
-package org.neuedu.ch类和对象.demo3;
+package org.neuedu.ch类和对象.demo03;
 
 public class Person {
     String name;

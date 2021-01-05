@@ -1,4 +1,4 @@
-package org.neuedu.ch类和对象.demo1;
+package org.neuedu.ch类和对象.demo01;
 
 public class Student {
     // 全局变量（成员变量，对象属性）

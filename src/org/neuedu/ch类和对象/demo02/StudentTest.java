@@ -1,4 +1,4 @@
-package org.neuedu.ch类和对象.demo2;
+package org.neuedu.ch类和对象.demo02;
 
 public class StudentTest {
     public static void main(String[] args) {
